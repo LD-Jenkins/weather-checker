@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Weather Checker</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="display-3">Weather Checker</h1>
+        <p class="lead">A simple weather app for planning your day or seeing what's going on around the world.</p>
+        <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container-lg">
+        <div class="row mb-0">
+            <div class="col-3" id="search-history">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Search:</span>
+                    <input type="text" class="form-control" placeholder="Your City" aria-label="Your City"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col-9" id="weather-data">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-current" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Current</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-hourly"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Hourly</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-fiveday"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">7 Day</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-current" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+                    <div class="tab-pane fade" id="nav-hourly" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                    <div class="tab-pane fade" id="nav-fiveday" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>

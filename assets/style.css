@@ -1,0 +1,18 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+}
+
+header {
+    text-align: center;
+    background-color: burlywood;
+    padding-bottom: 6px;
+}
+
+#weather-data {
+    border:lightgray;
+    border-width: 2px;
+    border-style: solid;
+    min-height: 200px;
+}
