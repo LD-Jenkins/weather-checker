@@ -18,36 +18,82 @@
         <p id="currentDay" class="lead"></p>
     </header>
     <div class="container-lg">
-        <div class="row mb-0">
-            <div class="col-3" id="search-history">
+        <div class="row" id="row-col">
+            <div class="col-4" id="search-container">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Search:</span>
-                    <input type="text" class="form-control" placeholder="Your City" aria-label="Your City"
-                        aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="user-query" placeholder="Type A City" aria-label="Type A City" aria-describedby="basic-addon1">
+                    <button type="button" class="btn btn-light" id="submit-btn">Submit</button>
                 </div>
+                <div class="list-group" id="query-list"></div>
             </div>
-            <div class="col-9" id="weather-data">
-                <nav>
+            <div class="col-8" id="weather-data">
+                <nav id="weather-nav">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-current" type="button" role="tab" aria-controls="nav-home"
                             aria-selected="true">Current</button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-hourly"
-                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Hourly</button>
                         <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-fiveday"
-                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">7 Day</button>
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">5 Day</button>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-current" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-                    <div class="tab-pane fade" id="nav-hourly" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                    <div class="tab-pane fade" id="nav-fiveday" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                    <div class="tab-pane fade show active" id="nav-current" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div id="city-name"></div>
+                        <img id="current-icon"></img>
+                        <div>Temperature: <span id="temp"></span> °F</div>
+                        <div>Humidity: <span id="humidity"></span>%</div>
+                        <div>Wind Speed: <span id="wind-speed"></span> MPH</div>
+                        <div>UV Index: <span id="uv-index"></span></div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-fiveday" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="container">
+                            <div class="row mb-3">
+                                <div class="col day-card">
+                                    <div id="first-date"></div>
+                                    <img id="first-icon" src="">
+                                    <div>High: <span id="first-high"></span></div>
+                                    <div>Low: <span id="first-low"></span></div>
+                                    <div>Humidity: <span id="first-humidity"></span></div>
+                                </div>
+                                <div class="col day-card">
+                                    <div id="second-date"></div>
+                                    <img id="second-icon" src="">
+                                    <div>High: <span id="second-high"></span></div>
+                                    <div>Low: <span id="second-low"></span></div>
+                                    <div>Humidity: <span id="second-humidity"></span></div>
+                                </div>
+                                <div class="col day-card">
+                                    <div id="third-date"></div>
+                                    <img id="third-icon" src="">
+                                    <div>High: <span id="third-high"></span></div>
+                                    <div>Low: <span id="third-low"></span></div>
+                                    <div>Humidity: <span id="third-humidity"></span></div>
+                                </div>
+                                <div class="col day-card">
+                                    <div id="fourth-date"></div>
+                                    <img id="fourth-icon" src="">
+                                    <div>High: <span id="fourth-high"></span></div>
+                                    <div>Low: <span id="fourth-low"></span></div>
+                                    <div>Humidity: <span id="fourth-humidity"></span></div>
+                                </div>
+                                <div class="col day-card">
+                                    <div id="fifth-date"></div>
+                                    <img id="fifth-icon" src="">
+                                    <div>High: <span id="fifth-high"></span></div>
+                                    <div>Low: <span id="fifth-low"></span></div>
+                                    <div>Humidity: <span id="fifth-humidity"></span></div>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
 
 </body>

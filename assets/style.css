@@ -8,6 +8,15 @@ header {
     text-align: center;
     background-color: burlywood;
     padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+#weather-nav {
+    margin-bottom: 32px;
+}
+
+.btn-light {
+    margin-left: 6px !important;
 }
 
 #weather-data {
@@ -15,4 +24,42 @@ header {
     border-width: 2px;
     border-style: solid;
     min-height: 200px;
+    line-height: 32px;
 }
+
+#search-container {
+    margin-bottom: 6px;
+}
+
+#nav-current {
+    padding-left: 18px;
+    padding-bottom: 18px;
+}
+
+#city-name {
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+
+#uv-index {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: lightcoral;
+    min-width: 32px;
+    text-align: center;
+}
+
+.day-card {
+    border:lightgray;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    color:azure;
+    background-color: cadetblue;
+    margin: 6px;
+    
+}
+
